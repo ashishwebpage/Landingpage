@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fitness Website</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Anton&display=swap" rel="stylesheet">
+    <style>
+        /* css reset */
+        body {
+            margin: 0px;
+            padding: 0px;
+            background-image: url('image/photo3.jpg');
+            /* height:2593px; */
+            background-repeat: no-repeat;
+            color: white;
+            font-family: 'Anton', sans-serif;
+        }
+
+        .left {
+            /* border:2px solid rgb(19, 219, 189); */
+            display: inline-block;
+            position: absolute;
+            top: 20px;
+            left: 40px;
+        }
+
+        .center {
+            /* border: 2px solid rgb(220, 231, 62); */
+            display: block;
+            width: 30%;
+            margin: 20px auto;
+            /* display: inline-block;
+            position:absolute;
+            left:45%;
+            top:20px;
+            width:200px; */
+        }
+
+        .right {
+            /* border: 2px solid rgb(200, 102, 239); */
+            display: inline-block;
+            position: absolute;
+            top: 20px;
+            right: 30px;
+        }
+
+        .nav li {
+            display: inline-block;
+            font-size: 20px;
+        }
+
+        .nav li a {
+            color: white;
+            text-decoration: none;
+            padding: 10px 15px;
+        }
+
+        .nav li a:hover {
+            color: rgb(131, 126, 126);
+            text-decoration: underline;
+        }
+
+        .left img {
+            width: 80px;
+            /* filter: invert(1); */
+        }
+
+        .left {
+            text-align: center;
+            font-size: 20px;
+            line-height: 18px;
+        }
+
+        .btn {
+            background-color: grey;
+            color: white;
+            border: 2px solid black;
+            border-radius: 10px;
+            margin: 0px 12px;
+            padding: 3px 16px;
+            cursor: pointer;
+            font-family: 'Anton', sans-serif;
+        }
+
+        .btn:hover {
+            color: black;
+        }
+
+        .container {
+            border: solid 5px rgb(181, 177, 177);
+            margin: 170px 87px;
+            padding: 22px 55px;
+            border-radius: 20px;
+            width: 27%;
+        }
+
+        .container h1 {
+            text-align: center;
+        }
+
+        form .btn {
+            /* position: relative;
+            left:159px; */
+            display: block;
+            width: 297px;
+            margin: 20px auto;
+            background-color: black;
+        }
+        form .btn:hover{
+            color:grey;
+        }
+
+
+        .form input {
+            display: block;
+            width: 231px;
+            text-align: center;
+            border: 2px solid black;
+            border-radius: 10px;
+            margin: 6px auto;
+            padding: 4px 32px;
+            font-size: 17px;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <div class="left">
+
+            <img src="image/photo4.jpg" alt="image">
+            <div>Gym Website</div>
+        </div>
+
+        <div class="center">
+            <ul class="nav">
+                <li><a href="#">Home</a></li>
+                <li><a href="#">About Us</a></li>
+                <li><a href="#">Contact Us</a></li>
+                <li><a href="#">Help</a></li>
+            </ul>
+        </div>
+
+        <div class="right">
+            <button class="btn">Call Us</button>
+            <button class="btn">Email Us</button>
+        </div>
+    </header>
+
+    <div class="container">
+        <h1>Join our gym.</h1>
+        <form action="nobackend.php">
+            <div class="form">
+                <input type="text" name="text" placeholder="Enter your name">
+            </div>
+            <div class="form">
+                <input type="text" name="text" placeholder="Enter your gender">
+            </div>
+            <div class="form">
+                <input type="text" name="text" placeholder="Enter your age">
+            </div>
+            <div class="form">
+                <input type="text" name="text" placeholder="Enter your address">
+            </div>
+            <div class="form">
+                <input type="text" name="text" placeholder="Enter your Phone Number">
+            </div>
+            <div class="form">
+                <input type="text" name="text" placeholder="Enter your Email Id">
+            </div>
+            <button class="btn">Submit</button>
+        </form>
+    </div>
+</body>
+</html>
